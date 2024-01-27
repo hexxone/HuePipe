@@ -1,0 +1,66 @@
+﻿{
+    "Connections": [
+        {
+            "Name": "Frontend Project",
+            "Interval": 10000,
+            "GitLab": {
+                "BaseUrl": "gitlab.test.com",
+                "ApiToken": "your_gitlab_api_token",
+                "ProjectId": "25",
+                "Branch": "main",
+                "Tag": ""
+            },
+            "Hue": {
+                "BridgeIp": "192.168.1.123",
+                "ApiKey": "your_hue_api_key",
+                "LightIds": [
+                    5,
+                    6
+                ]
+            },
+            "Color": {
+                "Success": "lime",
+                "Failed": "red",
+                "Running": "blue",
+                "Unknown": "purple",
+                "NormalAlpha": 254,
+                "BlinkCount": 3,
+                "BlinkAlpha": 127,
+                "BlinkInterval": 500,
+                "RevertAfterDelay": true,
+                "RevertDelay": 10000
+            }
+        },
+        {
+            "Name": "Backend Project",
+            "Interval": 10000,
+            "GitLab": {
+                "BaseUrl": "gitlab.test.com",
+                "ApiToken": "your_gitlab_api_token",
+                "ProjectId": "26",
+                "Branch": "feat/something",
+                "Tag": ""
+            },
+            "Hue": {
+                "BridgeIp": "192.168.1.123",
+                "ApiKey": "your_hue_api_key",
+                "LightIds": [
+                    7,
+                    8
+                ]
+            },
+            "Color": {
+                "Success": "lime",
+                "Failed": "red",
+                "Running": "blue",
+                "Unknown": "purple",
+                "NormalAlpha": 254,
+                "BlinkCount": 3,
+                "BlinkAlpha": 127,
+                "BlinkInterval": 500,
+                "RevertAfterDelay": true,
+                "RevertDelay": 10000
+            }
+        }
+    ]
+}
