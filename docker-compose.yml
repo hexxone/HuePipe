@@ -1,0 +1,11 @@
+
+services: 
+    huepipe:
+        container_name: huepipe
+        hostname: huepipe
+        image: local-huepipe:latest
+        build:
+            context: .
+            dockerfile: ./HuePipe/Dockerfile
+        volumes:
+            - ./HuePipe/appsettings.json:/app/appsettings.json
